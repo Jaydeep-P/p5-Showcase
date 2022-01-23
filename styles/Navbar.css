@@ -1,0 +1,51 @@
+.Navbar {
+    height:8vh;
+    width: 100%;
+    background-color:#1c1c1c;
+    display: flex;
+    justify-content:space-between;
+    flex-shrink: 0;
+}
+
+.Name img {
+    padding: 10px;
+    height:100%;
+}
+.Home{
+    /* height:100%; */
+    padding: 0em 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.About{
+    /* height:100%; */
+    padding: 0em 0.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Navbar a{
+    color: #a8981b;
+    font-size: 2.6vh;
+    transition: color 200ms linear;
+}
+.Navbar a:hover{
+    color: #f5dd27;
+}
+
+.rightSide{
+    display: flex;
+    width: fit-content;
+    padding: 0em 1em;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .Navbar a{
+        font-size: 4vw;
+    }
+}

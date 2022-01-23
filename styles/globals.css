@@ -1,7 +1,10 @@
 html,
 body {
+  height: 100%;
+  width: 100%;
   padding: 0;
   margin: 0;
+  background-color:rgb(39, 39, 39);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,4 +16,28 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.mainBody{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; 
+}
+
+.sketch{
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
+  display: flex;
+  /* align-items: center; */
+  /* align-content: stretch; */
+
+  justify-content: center;
+}
+
+.p5frame{
+  height: 100%;
+  width: 100%;
 }
