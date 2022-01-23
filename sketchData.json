@@ -1,0 +1,53 @@
+[
+    {
+        "sketchName": "spyro",
+        "code":"/sketchCode/spyro.js",
+        "backImageURL":"/images/spyro.jpeg"
+    },
+    
+    {
+        "sketchName": "dela",
+        "code":"/sketchCode/dela.js",
+        "backImageURL":"/images/dela.jpeg"
+    },
+    {
+        "sketchName": "double",
+        "code":"/sketchCode/double.js",
+        "backImageURL":"/images/double.jpeg"
+    },
+    {
+        "sketchName": "magic",
+        "code":"/sketchCode/magic.js",
+        "backImageURL":"/images/magic.jpeg"
+    },
+    {
+        "sketchName": "high",
+        "code":"/sketchCode/high.js",
+        "backImageURL":"/images/high.jpeg"
+    },
+    {
+        "sketchName": "boids",
+        "code":"/sketchCode/boids.js",
+        "backImageURL":"/images/boids.jpeg"
+    },
+    {
+        "sketchName": "wonder",
+        "code":"/sketchCode/wonder.js",
+        "backImageURL":"/images/wonder.jpeg"
+    },
+    {
+        "sketchName": "snek",
+        "code":"/sketchCode/snek.js",
+        "backImageURL":"/images/snek.jpeg"
+    },
+    {
+        "sketchName": "julia",
+        "code":"/sketchCode/julia.js",
+        "backImageURL":"/images/julia.jpeg"
+    },
+    {
+        "sketchName": "flow",
+        "code":"/sketchCode/flow.js",
+        "backImageURL":"/images/flow.jpeg"
+    }
+]
