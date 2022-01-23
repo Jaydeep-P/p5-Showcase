@@ -5,7 +5,7 @@ const Navbar = () => {
     return ( 
         <div className="Navbar" >
             <div className="Name">
-                <img src='/images/p5js.svg' />
+                <img src= {(process.env.ghpages?process.env.ghpath:"")+'/images/p5js.svg'} />
             </div>
             <div className='rightSide'>
                 <div className="Home">
@@ -16,7 +16,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="About">
-                    <Link href='/about'>
+                    <Link href={(process.env.ghpages?process.env.ghpath:"")+'/about'}>
                         <a>
                             About
                         </a>

@@ -4,5 +4,8 @@ module.exports = {
     loader: 'akamai',
     path: '',
   },
-  basePath: '/p5js-showcase',
+  env: {
+    ghpages: true,
+    ghpath: '/p5-Showcase'
+  },
 }

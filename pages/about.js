@@ -8,7 +8,7 @@ const About = () => {
                 <br/><br/>
                 To add new sketches, you only need to edit the sketchData.json file in the root folder. 
                 This static file could be replaced with a request to any database. The code for this website is available on my
-                <a href="https://github.com/Jaydeep-P/p5js-showcase" target="_blank" rel="noreferrer"> Github</a> 
+                <a href="https://github.com/Jaydeep-P/p5-Showcase" target="_blank" rel="noreferrer"> Github</a> 
                 <br/><br/>
                 I made this website as a successor to my old website that was made using plain HTML and CSS. I have used NextJs for this website, primary reason for doing so was to automate the page generation (Which I had to do by hand on the older version).
                 <br/>

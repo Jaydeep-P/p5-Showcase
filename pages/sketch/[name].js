@@ -14,7 +14,7 @@ const Sketch = () => {
         }
     });
 
-    if(currSketch==null) currSketch = {code:'/sketchCode/dela.js'}
+    if(currSketch==null) currSketch = {code:(process.env.ghpages?process.env.ghpath:"")+'/sketchCode/dela.js'}
 
     return ( 
         <div className="sketch">
@@ -43,7 +43,7 @@ const Sketch = () => {
             
                 </head>
                 <body>
-                <script src=${currSketch.code}></script>
+                <script src=${(process.env.ghpages?process.env.ghpath:"")+currSketch.code}></script>
                 </body>
             </html> `}></iframe>
         </div>
