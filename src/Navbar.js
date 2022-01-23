@@ -16,7 +16,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="About">
-                    <Link href={(process.env.ghpages?process.env.ghpath:"")+'/about'}>
+                    <Link href={'/about'}>
                         <a>
                             About
                         </a>

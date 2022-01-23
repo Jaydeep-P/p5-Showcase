@@ -16,7 +16,7 @@ export async function getStaticProps(context) {
  function SkBox({sk}){
 
   return(
-    <Link href={(process.env.ghpages?process.env.ghpath:"")+`/sketch/${sk.sketchName}`} passHref>
+    <Link href={`/sketch/${sk.sketchName}`} passHref>
     <div className={styles.skboxWrapper}>
         <div className={styles.skboxBackImage} style = {{backgroundImage:`url("${(process.env.ghpages?process.env.ghpath:"")+sk.backImageURL}")`}} />
         <div className={styles.skboxText}>{sk.sketchName.charAt(0).toUpperCase()+ sk.sketchName.substring(1)}</div>
