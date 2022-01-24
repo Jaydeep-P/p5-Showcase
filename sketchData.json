@@ -65,11 +65,6 @@
         "backImageURL":"/images/bfs.jpeg"
     },
     {
-        "sketchName": "langton-ant",
-        "code":"/sketchCode/langton-ant.js",
-        "backImageURL":"/images/langton-ant.jpeg"
-    },
-    {
         "sketchName": "multiply",
         "code":"/sketchCode/multiply.js",
         "backImageURL":"/images/multiply.jpeg"
