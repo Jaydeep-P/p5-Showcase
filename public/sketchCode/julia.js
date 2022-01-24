@@ -35,7 +35,7 @@
 let angle = 0;
 
 // Maximum number of iterations for each point on the complex plane
-const maxiterations = 100;
+const maxiterations = 30;
 
 // Colors to be used for each possible iteration count
 const colorsRed = [];
@@ -118,7 +118,7 @@ function draw() {
       }
 
       // We color each pixel based on how long it takes to get to infinity
-      // If we never got there, let's pick the color black
+      // If we never got there, let's pick the color black//#272727
       let pix = (i + j * width) * 4;
       if (n == maxiterations) {
         pixels[pix + 0] = 0;
@@ -131,7 +131,7 @@ function draw() {
         pixels[pix + 2] = colorsBlue[n];
         pixels[pix + 3] = 255;
 
-        if(pixels[pix + 0]==255&&pixels[pix + 1]==0&&pixels[pix + 2]==0){pixels[pix + 0]=0;}
+        if(pixels[pix + 0]==255&&pixels[pix + 1]==0&&pixels[pix + 2]==0){pixels[pix + 0]=39;pixels[pix + 1]=39;pixels[pix + 2]=39;}
       }
       x += dx;
     }

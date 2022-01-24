@@ -4,7 +4,6 @@
         "code":"/sketchCode/spyro.js",
         "backImageURL":"/images/spyro.jpeg"
     },
-    
     {
         "sketchName": "dela",
         "code":"/sketchCode/dela.js",
@@ -21,9 +20,24 @@
         "backImageURL":"/images/magic.jpeg"
     },
     {
-        "sketchName": "high",
-        "code":"/sketchCode/high.js",
-        "backImageURL":"/images/high.jpeg"
+        "sketchName": "petal",
+        "code":"/sketchCode/petal.js",
+        "backImageURL":"/images/petal.jpeg"
+    },
+    {
+        "sketchName": "snow",
+        "code":"/sketchCode/snow.js",
+        "backImageURL":"/images/snow.jpeg"
+    },
+    {
+        "sketchName": "n-body",
+        "code":"/sketchCode/n-body.js",
+        "backImageURL":"/images/n-body.jpeg"
+    },
+    {
+        "sketchName": "conway-life",
+        "code":"/sketchCode/conway-life.js",
+        "backImageURL":"/images/conway-life.jpeg"
     },
     {
         "sketchName": "boids",
@@ -36,9 +50,29 @@
         "backImageURL":"/images/wonder.jpeg"
     },
     {
-        "sketchName": "snek",
-        "code":"/sketchCode/snek.js",
-        "backImageURL":"/images/snek.jpeg"
+        "sketchName": "julia",
+        "code":"/sketchCode/julia.js",
+        "backImageURL":"/images/julia.jpeg"
+    },
+    {
+        "sketchName": "high",
+        "code":"/sketchCode/high.js",
+        "backImageURL":"/images/high.jpeg"
+    },
+    {
+        "sketchName": "bfs",
+        "code":"/sketchCode/bfs.js",
+        "backImageURL":"/images/bfs.jpeg"
+    },
+    {
+        "sketchName": "langton-ant",
+        "code":"/sketchCode/langton-ant.js",
+        "backImageURL":"/images/langton-ant.jpeg"
+    },
+    {
+        "sketchName": "multiply",
+        "code":"/sketchCode/multiply.js",
+        "backImageURL":"/images/multiply.jpeg"
     },
     {
         "sketchName": "flow",
@@ -46,8 +80,8 @@
         "backImageURL":"/images/flow.jpeg"
     },
     {
-        "sketchName": "julia",
-        "code":"/sketchCode/julia.js",
-        "backImageURL":"/images/julia.jpeg"
+        "sketchName": "snek",
+        "code":"/sketchCode/snek.js",
+        "backImageURL":"/images/snek.jpeg"
     }
 ]
