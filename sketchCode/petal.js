@@ -1,50 +1,42 @@
+var n = 130,
+  arr = [];
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
-}
-function mouseClicked(){
-  background(0);
-  draw()
+  for (i = 0; i < n; i++) {
+    arr.push(map(i, 0, n - 1, 1, 0));
+  }
 }
 
-function petal(len){
-  // rect(0,0,len,10);
-  stroke(0)
+function petal(len) {
+  stroke(0);
   strokeWeight(0.1);
-  // noStroke()
-  var x = len*0.33;
+  var x = len * 0.33;
   beginShape();
   vertex(0, 0);
-  bezierVertex(0, 0,-x, len/2,0,len);
-  bezierVertex(0,len,x, len/2,0, 0);
+  bezierVertex(0, 0, -x, len / 2, 0, len);
+  bezierVertex(0, len, x, len / 2, 0, 0);
   endShape(CLOSE);
 }
 
-var E = 2.7182,time=0.01,increasing= true;
-
-function mouseClicked(){
-  console.log(time);
-}
+var rotFac = 3.88322207745; // TWO_PI/goldenRatio
+var time = 0.01,start = 0;
 
 function draw() {
-  translate(width/2,height/2);
+  translate(width / 2, height / 2);
   background(0);
-  var len = width/2;
-  for(var i = 0;i<200;i++){
-    fill(0,i,0);
-    rotate(3.88322207919)
-    petal(len);
-    len*= Math.pow(E,-time);
+  var len = min(width,height)*1.2 / 2;
+  rotate(start * rotFac);
+  for (var i = 0; i < n; i++) {
+    fill(0, map(i, 0, n, 0, 160), 0);
+    rotate(rotFac);
+    petal(len * arr[i]);
+    arr[i] += 0.0007;
   }
-  
-  if(time>0.0667){
-    increasing = false;
+
+  if (arr[0] >= 1) {
+    arr.shift();
+    arr.push(0);
+    start++;
   }
-  if(time<0.015){
-    increasing = true;
-  }
-  
-  if(increasing)
-    time+= 0.0001;
-  else
-    time-= 0.0001;
 }
