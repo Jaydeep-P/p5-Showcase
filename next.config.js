@@ -1,12 +1,14 @@
+const ghpages = true;
 module.exports = {
   reactStrictMode: true,
   images: {
     loader: 'akamai',
     path: '',
   },
-  basePath: '/p5-Showcase',
   env: {
-    ghpages: true,
+    ghpages: ghpages,
     ghpath: '/p5-Showcase'
   },
+  basePath: ghpages?'/p5-Showcase':"",
+
 }

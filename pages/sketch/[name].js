@@ -1,18 +1,41 @@
 import { useRouter } from 'next/router'
+// import { getStaticProps } from '..';
 import sketchData from '../../public/sketchData.json'
 
 
-const Sketch = () => {
-    const router = useRouter();
-    const { name } = router.query;
-    
-    var currSketch;
+export function getStaticProps(context){
+    var currSketch = null;
     sketchData.forEach(obj => {
-        if(obj.sketchName==name){
+        if(obj.sketchName==context.params.name){
             currSketch = obj;
             return;
         }
     });
+    return {
+        props:{
+            currSketch
+        },   
+    };
+}
+export async function getStaticPaths() {
+    var paths = []
+    for(var i=0;i<sketchData.length;i++){
+        paths.push(
+            {
+                params:{
+                    name:sketchData[i].sketchName,
+                }
+            }
+        )
+    }
+    return {
+      paths,
+      fallback: false // See the "fallback" section below
+    };
+  }
+  
+
+const Sketch = ({currSketch}) => {
 
     if(currSketch==null) currSketch = {code:(process.env.ghpages?process.env.ghpath:"")+'/sketchCode/dela.js'}
 
