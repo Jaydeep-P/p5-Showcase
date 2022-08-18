@@ -4,9 +4,14 @@
 
 This website was made to show p5 sketches with a preview image, this is much more impressive than the stock p5js sketch list. 
 
+![demo image](./images/demo1.png)
+![demo image](./images/demo2.png)
+
+
 ## Technologies used
 
 NextJS, Static site generation, p5js.
+
 
 
 ## Usage
